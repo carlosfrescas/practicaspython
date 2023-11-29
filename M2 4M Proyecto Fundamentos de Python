@@ -37,4 +37,4 @@ if x != 0 and y != 0:
     cuadrante = determinar_cuadrante(x, y)
     print(f"El punto se encuentra en el cuadrante {cuadrante}.")
 else:
-    print("Por favor, ingrese coordenadas distintas de 0 para ambas coordenadas.")
+    print("Por favor, ingrese coordenadas distintas de 0 para ambas coordenadas.") 
