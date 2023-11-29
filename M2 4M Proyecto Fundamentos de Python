@@ -1,0 +1,17 @@
+def LongitudPalabra(palabra):
+    longitud = len(palabra)
+
+    if 4 <= longitud <= 8:
+        print("La palabra es correcta.")
+    elif longitud < 4:
+        print(f"Hacen falta letras. Solo tiene {longitud} letras.")
+    else:
+        print(f"Sobran letras. Tiene {longitud} letras.")
+
+# Solicitar al usuario ingresar una palabra
+palabra_ingresada = input("Ingresa una palabra: ")
+
+# Llamar a la función para verificar la longitud de la palabra
+LongitudPalabra(palabra_ingresada)
+
+#
