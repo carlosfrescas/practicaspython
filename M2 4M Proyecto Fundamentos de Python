@@ -14,4 +14,27 @@ palabra_ingresada = input("Ingresa una palabra: ")
 # Llamar a la función para verificar la longitud de la palabra
 LongitudPalabra(palabra_ingresada)
 
-#
+##########################################
+
+def determinar_cuadrante(x, y):
+    if x > 0 and y > 0:
+        return "I"
+    elif x < 0 and y > 0:
+        return "II"
+    elif x < 0 and y < 0:
+        return "III"
+    elif x > 0 and y < 0:
+        return "IV"
+    else:
+        return "No se encuentra en ningún cuadrante."
+
+# Solicitar al usuario ingresar las coordenadas
+x = float(input("Ingrese X: "))
+y = float(input("Ingrese Y: "))
+
+# Verificar que ninguna coordenada sea 0
+if x != 0 and y != 0:
+    cuadrante = determinar_cuadrante(x, y)
+    print(f"El punto se encuentra en el cuadrante {cuadrante}.")
+else:
+    print("Por favor, ingrese coordenadas distintas de 0 para ambas coordenadas.")
